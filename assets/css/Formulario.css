@@ -1,0 +1,81 @@
+.formulario{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    width: 100%;
+}
+
+input[type="text"]{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+
+
+form{
+    width: 100%;
+    max-width: 50%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+        "Nome radio"
+        "Poderes Habilidades"
+        "Resumo Resumo"
+        "Botao Botao";
+
+    justify-content: space-around;
+
+}
+
+.Nome{
+    grid-area: Nome;
+}
+
+.radio{
+    grid-area: radio;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+
+}
+
+.Poderes{
+    grid-area: Poderes;
+}
+
+.Habilidades{
+    grid-area: Habilidades;
+}
+
+.Resumo{
+    grid-area: Resumo;
+}
+
+.Botao{
+    grid-area: Botao;
+    display: flex;
+    justify-content: center;
+}
+
+form div{
+    padding: 15px;
+}
+
+input[type="button"]{
+    width: 30%;
+}
+
+.item{
+    width: 100%;
+    text-align: start;
+}
