@@ -1,52 +1,55 @@
-.formulario{
-    width: 100%;
+/*
+Cores:
 
+Cinza escuro #232f3e
+Cinza Claro #2d353f
+Laranja #ff9900
+Azul #146eb4
+Branco #ffffff
+*/
+
+.formulario{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
-
-label{
-    width: 100%;
-}
-
-input[type="text"]{
-    width: 100%;
-}
-
-textarea{
-    width: 100%;
-}
-
-
 
 form{
-    width: 100%;
-    max-width: 50%;
+
+    width: 50%;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+
+    background-color: #2d353f;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4fr;
-    grid-template-areas:
-        "Nome radio"
-        "Poderes Habilidades"
-        "Resumo Resumo"
-        "Botao Botao";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr .5fr;
+    grid-template-areas: 
+    "Nome Alinhamento"
+    "Poderes Habilidades"
+    "Resumo Resumo"
+    "Botao Botao";
+}
 
-    justify-content: space-around;
-
+label, input, textarea{
+    margin: 10px;
+    resize: none;
 }
 
 .Nome{
     grid-area: Nome;
 }
 
-.radio{
-    grid-area: radio;
+.Alinhamento{
+    grid-area: Alinhamento;
     display: flex;
-    flex-flow: row wrap;
-    align-items: start;
-
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .Poderes{
@@ -58,24 +61,18 @@ form{
 }
 
 .Resumo{
-    grid-area: Resumo;
+    grid-area: Resumo
 }
 
 .Botao{
     grid-area: Botao;
-    display: flex;
-    justify-content: center;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    
 }
 
 form div{
-    padding: 15px;
-}
-
-input[type="button"]{
-    width: 30%;
-}
-
-.item{
-    width: 100%;
-    text-align: start;
+    display: flex;
+    flex-direction: column;
 }

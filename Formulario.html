@@ -34,40 +34,50 @@
     <main>
 
         <!-- --------------------------Formulario-------------------------- -->
+
         <div class="formulario">
             <form action="">
 
-                <div class="item Nome">
-                    <label for="name">Nome do super:</label><br>
-                    <input type="text" id="name" name="name" placeholder="Nome do super">
+                <div class="Nome">
+                    <label for="Nome">Nome</label>
+                    <input type="text" name="Nome" id="nome" placeholder="Nome">
                 </div>
-                <div class="item radio">
-                    <label for="name">Alinhamento:</label>
 
-                    <label for="alignment">Heroi</label>
-                    <input type="radio" id="alignment" name="alignment" value="Herói">
 
-                    <label for="alignment">Vilão</label>
-                    <input type="radio" id="alignment" name="alignment" value="Vilão">
+
+                <div class="Alinhamento">
+
+                    <p>Alinhamento:</p>
+
+                    <label for="Vilao">Vilão</label>
+                    <input type="radio" name="Vilao">
+
+                    <label for="Alinhamento">Heroi</label>
+                    <input type="radio" name="Heroi" id="Heroi">
+
                 </div>
-                <div class="item Poderes">
-                    <label for="powers">Poderes:</label>
-                    <input type="text" id="powers" name="powers" placeholder="Poderes">
+
+                <div class="Poderes">
+                    <label for="Poderes">Poderes</label>
+                    <input type="text" name="Poderes" id="poderes" class="Poderes" placeholder="Poderes">
                 </div>
-                <div class="item Habilidades">
-                    <label for="abilities">Habilidades:</label>
-                    <input type="text" id="abilities" name="abilities" placeholder="Habilidades">
+
+                <div class="Habilidades">
+                    <label for="Habilidades">Habilidades</label>
+                    <input type="text" name="Habilidades" id="habilidades" class="Habilidades"
+                        placeholder="Habilidades">
                 </div>
-                <div class="item Resumo">
-                    <label for="abstract">Resumo:</label>
-                    <textarea name="Resumo" id="Resumo" placeholder="Escreva sobre seu super"></textarea>
+
+                <div class="Resumo">
+                    <label for="Resumo">Resumo</label>
+                    <textarea name="Resumo" id="resumo" class="Resumo" placeholder="Resumo" cols="10" rows="10"></textarea>
                 </div>
-                <div class="item Botao">
-                    <input type="button" value="Criar" id="button">
-                </div>
+
+                <input type="button" class="Botao" value="Enviar">
 
             </form>
         </div>
+
         <!-- --------------------------Formulario-------------------------- -->
 
     </main>
