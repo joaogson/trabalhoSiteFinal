@@ -36,6 +36,10 @@ header{
     margin: 15px;
 }
 
+.LogoRodape{
+    width: 100%;
+}
+
 nav{
     background-color: #2d353f;
 
@@ -48,6 +52,8 @@ nav{
     align-items: center;
 
     border-bottom: 2px solid #ff9900;
+
+    box-shadow: 1px 2px 5px 2px black;
 }
 
 .w33{
@@ -121,6 +127,7 @@ nav div:hover{
 
 footer{
 
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -134,6 +141,8 @@ footer{
     justify-content: space-around;
 
     border-top: solid 2px #146eb4;
+
+    box-shadow: 2px 2px 5px 2px black;
 }
 
 footer div{

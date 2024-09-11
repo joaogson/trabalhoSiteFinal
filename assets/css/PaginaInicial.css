@@ -23,6 +23,8 @@ section{
 
     background-color: #2d353f;
 
+    box-shadow: 1px 2px 5px 2px black;
+
     padding: 35px;
 }
 
@@ -54,6 +56,7 @@ article p{
 
     border-left: 2px solid #ff9900;
     border-right: 2px solid #146eb4;
+
 }
 
 /* --------------------------Corpo do Texto--------------------------*/
