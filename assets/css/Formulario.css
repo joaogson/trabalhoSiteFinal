@@ -39,7 +39,7 @@ form{
 
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr .6fr;
     grid-template-areas: 
     "Nome Radio"
     "Poderes Poderes"
@@ -90,10 +90,12 @@ form div input {
 
 .Poderes{
     grid-area: Poderes;
+
+    width: 100%;
 }
 
 .Resumo{
-    grid-area: Resumo;
+    grid-area: Resumo
 }
 
 textarea{
